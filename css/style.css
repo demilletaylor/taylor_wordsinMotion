@@ -1,3 +1,28 @@
 body { 
     min-height: 100vh; 
+    font-family: 'Young Serif';
+    padding-left: 300px;
+    padding-right: 300px;
+}
+h1{
+    text-transform: uppercase;
+    text-align: center;
+}
+h3{
+    font-size: 30px;
+    display:inline-block;
+}
+.sections {
+    display: flex;
+    flex-direction: row;
+    color: fuchsia;
+    background-color: orchid;
+   justify-content: center;
+
+}
+navbar{
+    display: block;
+    text-align: center;
+    padding: 20px;
+
 }
