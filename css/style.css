@@ -1,8 +1,8 @@
 body { 
+    width: 100%;
     min-height: 100vh; 
     font-family: 'Young Serif';
-    padding-left: 300px;
-    padding-right: 300px;
+    background-image:linear-gradient(green,)rgb(6, 63, 148);
 }
 h1{
     text-transform: uppercase;
@@ -10,19 +10,51 @@ h1{
 }
 h3{
     font-size: 30px;
-    display:inline-block;
+    padding-left: 325px;
+    padding-right: 325px;
+    color: white;
 }
-.sections {
-    display: flex;
-    flex-direction: row;
-    color: fuchsia;
-    background-color: orchid;
-   justify-content: center;
 
-}
-navbar{
-    display: block;
+.navbar{
     text-align: center;
-    padding: 20px;
+    display:flex;
+    align-items: center;
 
 }
+a{
+    text-decoration:none;
+    text-transform: uppercase;
+    font-size:20px;
+}
+.container1{
+    width: 100%;
+    height: 25vh;
+    background-color: green;
+}
+
+
+#container2{
+    width: 100%;
+    height: 50vh;
+    background-color: rgb(145, 17, 0);
+    animation-name: ringing;
+    animation-delay: 1s;
+    animation-direction: alternate-reverse;
+    animation-duration: 1.5s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+
+.container3{
+    width: 100%;
+    height: 100vh;
+    background-color: sienna;
+}
+.container4{
+    background-image: -moz-radial-gradient();
+    width: 100%;
+    height: 100vh; 
+}
+
