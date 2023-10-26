@@ -4,4 +4,5 @@
     For this project, I selected two of my favorite songs that embody the spirit of community.
     "I Just Called to Say I Love You" by Stevie Wonder
     "Where Peaceful Waters Flow" by Gladys Knight & the Pips.
- 
+    #Credits
+    Ringing animation: https://codepen.io/Mrshcom/pen/kNmBGm

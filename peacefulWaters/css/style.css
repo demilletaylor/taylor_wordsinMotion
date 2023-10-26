@@ -13,20 +13,84 @@ body {
     color: white;
     font-size: 70px;
 }
-.loneliness{
-    animation-name:loneliness;
+.lonely{
+    animation-name:clouds;
     animation-delay: none;
     animation-direction: forwards;
-    animation-duration: 6s;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out;
+    animation-duration: 7s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
 }
-@keyframes loneliness{
+.clouds{
+    animation-name:clouds;
+    animation-delay: none;
+    animation-direction: forwards;
+    animation-duration: 10s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+}
+.gentle{
+    animation-name:sky;
+    animation-delay: none;
+    animation-direction: forwards;
+    animation-duration: 17s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+}
+.where{
+  animation-name:where;
+  animation-delay: none;
+  animation-direction: forwards;
+  animation-duration: 24s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+}
+.peaceful,.waters,.flow{
+    display:inline;
+}
+.peaceful{
+    animation-name: peacefulwaters;
+    animation-duration: 1.3s;
+    animation-timing-function: ease;
+    animation-iteration-count: 1;
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+  .waters{
+    animation-name: peacefulwaters;
+    animation-duration: 1.9s;
+    animation-timing-function: ease;
+    animation-iteration-count: 1;
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+  .flow{
+    animation-name: peacefulwaters;
+    animation-duration: 2.5s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+@keyframes clouds{
     from{
-       transform: translate(1000px,0px);
+       transform: translate(5000px,0px);
+
     }
     to{ 
-        transform: translate(0px,1000px);
+        transform: translate(0px,0px) 
+    }
+}
+@keyframes sky{
+    from{
+       transform: translate(5000px,0px) skew(25deg, 0deg);
+
+    }
+    to{ 
+        transform: translate(0px,10px) 
     }
 }
 @keyframes bg{
@@ -38,3 +102,74 @@ body {
        
     }
 }
+@keyframes peacefulwaters {
+    0% {
+      top: 0px;
+    }
+    50% {
+      top: -15px;
+    }
+    100% {
+      top: 0px;
+    }
+  }
+  @keyframes where {
+    25% { -webkit-transform: translate(5000px,0px) rotateZ (5deg); }
+    50% { -webkit-transform: translate(0px, 10px) rotateZ(-5deg); }
+    75% { -webkit-transform: translate(3deg); }
+    100% { -webkit-transform: rotateZ(-3deg); }
+  }
+
+  
+  .phone{
+    display:block;
+    width: 40px;
+    height: 40px;
+    font-size: 40px;
+    margin:50px auto 0;
+    -webkit-animation: ring 4s .7s ease-in-out infinite;
+    -webkit-transform-origin: 50% 4px;
+    -moz-animation: ring 4s .7s ease-in-out infinite;
+    -moz-transform-origin: 50% 4px;
+    animation: ring 4s .7s ease-in-out infinite;
+    transform-origin: 50% 4px;
+  }
+ a
+ {color: white;
+  text-decoration: none;
+  text-transform: none;
+}
+  a:hover{
+    color: lime;
+  }
+
+  
+  
+  @-webkit-keyframes ring {
+    0% { -webkit-transform: rotateZ(0); }
+    1% { -webkit-transform: rotateZ(30deg); }
+    3% { -webkit-transform: rotateZ(-28deg); }
+    5% { -webkit-transform: rotateZ(34deg); }
+    7% { -webkit-transform: rotateZ(-32deg); }
+    9% { -webkit-transform: rotateZ(30deg); }
+    11% { -webkit-transform: rotateZ(-28deg); }
+    13% { -webkit-transform: rotateZ(26deg); }
+    15% { -webkit-transform: rotateZ(-24deg); }
+    17% { -webkit-transform: rotateZ(22deg); }
+    19% { -webkit-transform: rotateZ(-20deg); }
+    21% { -webkit-transform: rotateZ(18deg); }
+    23% { -webkit-transform: rotateZ(-16deg); }
+    25% { -webkit-transform: rotateZ(14deg); }
+    27% { -webkit-transform: rotateZ(-12deg); }
+    29% { -webkit-transform: rotateZ(10deg); }
+    31% { -webkit-transform: rotateZ(-8deg); }
+    33% { -webkit-transform: rotateZ(6deg); }
+    35% { -webkit-transform: rotateZ(-4deg); }
+    37% { -webkit-transform: rotateZ(2deg); }
+    39% { -webkit-transform: rotateZ(-1deg); }
+    41% { -webkit-transform: rotateZ(1deg); }
+    43% { -webkit-transform: rotateZ(0); }
+    100% { -webkit-transform: rotateZ(0); }
+  }
+  
+  

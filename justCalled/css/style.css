@@ -26,7 +26,7 @@ em{
 
 
 
-h1, h2, h3, h4{
+h1, h2, h3, h4, h5, h6{
     text-align: center;
 }
 h3, h4{
@@ -72,9 +72,30 @@ h5{
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
 }
+h6{
+    font-size: 40px;
+}
 
+h6, a{ 
+  animation-name: spin;
+  animation-direction: forwards;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    text-decoration: none;
+  text-transform: none;
+}
 
-
+@keyframes spin{
+    from{
+        font-size: 10px;
+        color: white
+    }
+    to{
+        font-size: 30px;
+         color: lime;
+        transform: rotate(3600deg);
+    }
+}
 
 
 @keyframes ringing{
