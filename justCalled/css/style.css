@@ -23,16 +23,13 @@ em{
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
 }
-b {
-    hover
-}
 
 
-h1, h2, h3{
+
+h1, h2, h3, h4{
     text-align: center;
-    color: white;
 }
-h3{
+h3, h4{
     font-size: 30px;
     padding-left: 325px;
     padding-right: 325px;
@@ -49,34 +46,29 @@ h1{
   
 }
 h2{
-    animation-name: heartbeat;
-    animation-direction: alternate;
+    animation-name: iloveyou;
+    animation-direction: forwards;
     animation-duration: 14s;
     animation-iteration-count:infinite;
     position: relative;
     transform-origin: center;
+    animation-timing-function: ease-in-out
     }
-h3
-    {
-        animation-name: care;
-        animation-delay: 10s;
-        animation-direction: forwards;
-        animation-duration: 16s;
-        animation-timing-function: ease;
+h3,h4
+    {animation-name: care;
+        animation-delay: 0s;
+        animation-direction: forwards ;
+        animation-duration: 10s;
         animation-iteration-count: infinite;
-        position: relative;
-        top: 0;
-        left: 0;
-        margin-top: 100px;
-        
+        animation-timing-function: ease-in-out;
     }
 h5{
     text-align: center;
     font-size: 50px;
     animation-name: heart;
-    animation-delay: none;
-    animation-direction: alternate-reverse;
-    animation-duration: 5s;
+    animation-delay: 0s;
+    animation-direction: forwards;
+    animation-duration: 10s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
 }
@@ -104,32 +96,27 @@ h5{
 }
 @keyframes care{
     from {
-        display: none;
+        color: black;
+        transform: translate(1000px, 0px);
     }
   
     to{
-        display: visible;
-        
+        color: pink;
+        transform: translate(0px, 0px)
     }
 }
 
-  @keyframes heartbeat{
+  @keyframes iloveyou{
     from{
        color: yellow;
-       opacity: 0;
     }
     to { transform: scale(5);
-        -webkit-transform: scale(5);
-        -moz-transform: scale(5);
-        -o-transform: scale(5);
-        -ms-transform: scale(5);
     	-webkit-transform-origin: center;
 	-moz-transform-origin: center;
 	-o-transform-origin: center;
 	-ms-transform-origin: center;
 	transform-origin: center;
     color: pink;
-    opacity: 1;
     }
 }
 @keyframes ijustcalled {
@@ -147,11 +134,12 @@ h5{
 
 @keyframes heart{
     from{
-        color: red
+        color: red;
+        transform: translate(0px, 10000px);
     }
     to {
         color: white;
-        transform: scale(3);
+        transform: scale(3) translate(0px, 0px);
         -webkit-transform: scale(3);
         -moz-transform: scale(3);
         -o-transform: scale(3);

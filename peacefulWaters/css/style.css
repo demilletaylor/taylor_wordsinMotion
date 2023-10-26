@@ -1,0 +1,40 @@
+body { 
+    width: 100%;
+    min-height: 100vh; 
+    animation-name: bg;
+    animation-delay: none;
+    animation-direction: alternate-reverse;
+    animation-duration: 5s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    text-align: center;
+    font-family: 'Righteous';
+    color: white;
+    font-size: 70px;
+}
+.loneliness{
+    animation-name:loneliness;
+    animation-delay: none;
+    animation-direction: forwards;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+@keyframes loneliness{
+    from{
+       transform: translate(1000px,0px);
+    }
+    to{ 
+        transform: translate(0px,1000px);
+    }
+}
+@keyframes bg{
+    from{
+        background-color: skyblue;
+    }
+    to {
+        background-color:darkorchid;
+       
+    }
+}
